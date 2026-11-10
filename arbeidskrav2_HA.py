@@ -1,20 +1,25 @@
-# Arbeidskrav 2 PY1010
+# -*- coding: utf-8 -*-
+"""
+Created on Mon Nov  9 19:55:53 2026
 
-import numpy as np
-import pandas as pd
-import matplotlib.pyplot as plt
-import math
+@author: henri
+"""
+
+# Arbeidskrav 2 PY1010
 
 # %%
 # Oppgave 1 
-alder = int(input("Hvilket ar er du fodt?"))
-aarstall = int(input("Hvilket ar er det na?"))
+
+alder = int(input("Hvilket ar er du fodt? "))
+aarstall = int(input("Hvilket ar er det na? "))
 alder_beregnet = aarstall - alder
 print(f"I {aarstall} fyller du {alder_beregnet} ar")
 
 # %%
 # Oppgave 2
-antall_elever = int(input("Skriv inn antall elever:"))
+import math
+
+antall_elever = int(input("Skriv inn antall elever: "))
 pizza_per_elev = 1/4
 antall_pizza = pizza_per_elev * antall_elever
 # runde opp til helt tall
@@ -23,16 +28,18 @@ print(f"Ved {antall_elever} elever, ma det kjopes inn {antall_pizza} pizzaer")
 
 # %%
 # Oppgave 3
+import numpy as np
+
 def grader_til_radianer(v_grad):
   return v_grad * np.pi / 180
 
-v_grad = float(input("Skriv inn gradtallet:"))
+v_grad = float(input("Skriv inn gradtallet: "))
 v_rad = grader_til_radianer(v_grad)
 
 print(f"Radiantallet til vinkelen er {v_rad: .2f}")
-
 # %%
 # Oppgave 4a
+
 data = {
     "Norge": ["Oslo", 0.634],
     "England": ["London", 8.982],
@@ -41,6 +48,7 @@ data = {
 }
 
 # Oppgave 4b
+
 land = str(input("Skriv inn land: "))
 hovedstad = data[land][0]
 innbyggere = data[land][1]
@@ -58,6 +66,8 @@ print(data)
 
 # %%
 # Oppgave 5
+import math
+
 def fun_areal_ytre_omkrets(a, b):
     areal_tre = (a * b) / 2
     c = math.sqrt(a**2 + b**2)
@@ -77,3 +87,17 @@ b = int(input("Skriv inn lengde b: "))
 print(f"Totalt areal =, {total_areal: .4f}")
 print(f"Ytre omkrets =, {ytre_omkrets: .4f}")
 
+# %%
+# Oppgave 6
+
+import numpy as np
+import matplotlib.pyplot as plt
+
+x= np.linspace(-10, 10, 200)
+y = -x**2 - 5
+
+plt.plot(x, y)
+plt.xlabel("x")
+plt.ylabel("f(x)")
+plt.grid()
+plt.show()
