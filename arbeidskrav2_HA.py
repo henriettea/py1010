@@ -74,6 +74,6 @@ b = int(input("Skriv inn lengde b: "))
 
 (total_areal, ytre_omkrets) = fun_areal_ytre_omkrets(a, b)
 
-print(f"Totalt areal =, {total_areal: .4f}"))
+print(f"Totalt areal =, {total_areal: .4f}")
 print(f"Ytre omkrets =, {ytre_omkrets: .4f}")
 
