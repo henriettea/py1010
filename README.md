@@ -12,4 +12,4 @@ Dette er et program som beregner og presenterer (viser) de årlige totalkostnade
 
 ## Arbeidskrav 2
 
-Ulike programmer som er nærmere beskrevet i koden i form av kommentarer bakt inn i koden.
+Ulike programmer som er nærmere beskrevet i form av kommentarer bakt inn i koden.
