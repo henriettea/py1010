@@ -9,7 +9,7 @@ Created on Mon Nov  9 19:55:53 2026
 
 # %%
 # Oppgave 1 
-# Her ber programmet brukeren oppgi fødselsår og nåværende år. Deretter beregnes alderen.
+# Her ber programmet bruker om å oppgi fødselsår og nåværende år. Deretter beregnes og printes alderen.
 
 alder = int(input("Hvilket ar er du fodt? "))
 aarstall = int(input("Hvilket ar er det na? "))
@@ -18,21 +18,18 @@ print(f"I {aarstall} fyller du {alder_beregnet} ar")
 
 # %%
 # Oppgave 2
-# Her beregner programmet hvor mange pizzaer som 
-# må kjøpes dersom hver elev skal ha 1/4 pizza 
+# Her beregner programmet hvor mange pizzaer som må kjøpes dersom hver elev skal ha 1/4 pizza 
 import math
 
 antall_elever = int(input("Skriv inn antall elever: "))
 pizza_per_elev = 1/4
 antall_pizza = pizza_per_elev * antall_elever
-antall_pizza = math.ceil(antall_pizza) # Antall runder opp til nærmeste heltall fordi man må kjøpe hele pizzaer
+antall_pizza = math.ceil(antall_pizza) # Antall rundes opp til nærmeste heltall fordi man må kjøpe hele pizzaer
 print(f"Ved {antall_elever} elever, ma det kjopes inn {antall_pizza} pizzaer")
 
 # %%
 # Oppgave 3
-# Dette programmet inneholder en funksjonen konverterer 
-# vinkel fra grader til radianer basert på input gradtall, 
-# og  printer radiantallet
+# Dette programmet inneholder en funksjonen konverterer vinkel fra grader til radianer basert på input gradtall, og printer radiantallet
 
 import numpy as np
 
@@ -42,16 +39,13 @@ def grader_til_radianer(v_grad):
 # Bruker bes om å skrive inn gradtall
 v_grad = float(input("Skriv inn gradtallet: "))
 
-# Funksjon benyttes og resultatene lagres i en variabel
+# Funksjonen benyttes for utregning og resultatene lagres i en variabel, som skrives ut med to desimaler
 v_rad = grader_til_radianer(v_grad)
-
-# Skriver ut resultatet med to desimaler
 print(f"Radiantallet til vinkelen er {v_rad: .2f}")
 
 # %%
 # Oppgave 4a
-# Her opprettes en dictionary med land, hovedstader, 
-# og innbyggertall
+# Her opprettes en dictionary med land, hovedstader, og innbyggertall
 
 data = {
     "Norge": ["Oslo", 0.634],
@@ -61,8 +55,8 @@ data = {
 }
 
 # Oppgave 4b
-# Her hetnes informasjon fra ordboken basert på hvilket land 
-# man oppgir
+# Her hentes informasjon fra dictionary basert på hvilket land man oppgir
+
 land = str(input("Skriv inn land: "))
 hovedstad = data[land][0]
 innbyggere = data[land][1]
@@ -85,8 +79,7 @@ print(data)
 
 # %%
 # Oppgave 5
-# Dette programmet beregner areal og ytre omkrets 
-# av en figur som består av en trekant og en halvsirkel
+# Dette programmet beregner areal og ytre omkrets av en figur som består av en trekant og en halvsirkel
 
 import math
 
@@ -114,7 +107,7 @@ print(f"Ytre omkrets =, {ytre_omkrets: .4f}")
 
 # %%
 # Oppgave 6
-# Dette programmet 
+# Dette programmet plotter funksjonen i oppgaven for x på intervallet [-10, 10]
 
 import numpy as np
 import matplotlib.pyplot as plt
