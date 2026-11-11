@@ -11,4 +11,5 @@ Dette er et program som beregner og presenterer (viser) de årlige totalkostnade
 * Bomavgift: Elbil: 0,1 kr/km. Bensinbil: 0,3 kr/km.
 
 ## Arbeidskrav 2
-1) Et program som starter med alder = int(input('Hvilket år er du født? ') ) og som regner ut hvor gammel personen blir nå i løpet av år 2024. Programmet skriver svaret til skjerm med passende tekst.
+
+Ulike programmer som er nærmere beskrevet i koden i form av kommentarer bakt inn i koden.
